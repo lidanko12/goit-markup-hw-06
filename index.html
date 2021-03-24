@@ -31,7 +31,7 @@
         </li>
     </ul>
 </nav>
-<ul class="item-link list"> 
+<ul class="items-link list"> 
     <li class="mail">
         <a class="tel-link link" href="mailto:info@devstudio.com" lang="en">
             <svg class="tel-icon" width="16" height="12">
@@ -344,15 +344,6 @@
         </ul>
     </div>
 </section>
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal-window">
-        <button class="close-btn"   type="button" data-modal-close>
-            <svg width="18px" height="18px">
-                <use href="./images/svgsprat/symbol.svg#icon-close"></use>
-            </svg>
-        </button>
-            
-</div>
 
 </main>
 <footer class="footer">
@@ -406,7 +397,7 @@
         </ul>
     </div>
     <div class="subscribe">
-        <p class="subscribe-text">Подпишитесь на рассылку</p>
+        <b class="subscribe-text">Подпишитесь на рассылку</b>
         <form class="subscribe-form" autocomplete="off">
             <input class="subscribe-mail" type="email" id="mail" name="mail" placeholder="E-mail" >
             <button class="subscribe-btn" type="submit">Подписаться
@@ -421,10 +412,50 @@
 <div class="backdrop is-hidden" data-modal>
     <div class="modal-window">
         <button class="close-btn" type="button" data-modal-close>
-            <svg width="18px" height="18px">
+            <svg class="close-icon" width="18px" height="18px">
                 <use href="./images/svgsprat/symbol.svg#icon-close"></use>
             </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="" class="modal-form">
+            <div class="modal-content">
+                <label class="modal-form-label" for="name" id="name">Имя</label>
+                <input type="text" class="modal-form-input" name="name" id="name" placeholder=" " >
+                <svg class="modal-icon-form"  width="18" height="18">
+                    <use href="./images/svgsprat/symbol.svg#icon-person"></use>
+                </svg>
+                
+            </div>
+            <div class="modal-content">
+                <label class="modal-form-label" for="tel" id="tel">Телефон</label>
+                <input type="tel" class="modal-form-input" name="tel" id="tel" placeholder=" ">
+                <svg class="modal-icon-form" width="18" height="18">
+                    <use href="./images/svgsprat/symbol.svg#icon-phone"></use>
+                </svg>
+            
+            </div>
+            <div class="modal-content">
+                <label class="modal-form-label" for="mail" id="mail">Почта</label>
+                <input type="mail" class="modal-form-input" name="mail" id="mail" placeholder=" ">
+                <svg class="modal-icon-form" width="18" height="18">
+                    <use href="./images/svgsprat/symbol.svg#icon-email"></use>
+                </svg>
+            </div>
+            <div class="modal-content">
+                <label class="modal-form-label" for="comment" id="comment">Коментарий</label>
+                <textarea class="modal-comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+            </div>
+                <label class="modal-form-checkbox">
+                    <input class="modal-checkbox" type="checkbox" name="agree" value="agree" class="modal-checkbox" />
+                    <svg class="checkbox-icon" width="16" height="15">
+                        <use href="./images/svgsprat/symbol.svg#icon-check"></use>
+                    </svg>
+                    <span>Соглашаюсь с рассылкой и принимаю</span>
+                    <a class="agree-link" href="#">Условия договора</a>
+                </label>
+                <button type="submit" class="agree-btn">Отправить</button>
+               
+        </form>
     </div>
 </div>  
     <script src="./js/modal.js"></script>
